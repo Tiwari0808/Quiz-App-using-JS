@@ -38,7 +38,7 @@ body{
     flex-direction: column;
     /* align-items: center; */
     /* justify-content: flex-start; */
-    cursor: pointer;
+    
 }
 
 .btn{
@@ -52,13 +52,19 @@ body{
     border: 1px solid #222;
     border-radius: 10px;
     margin: 10px;
-    cursor: pointer;
     transition: all 0.3s;
 }
 
-.btn:hover{
+button{
+    cursor: pointer;
+}
+.btn:hover:not([disabled]){
     background: #222;
     color: #fff;
+
+}
+.btn:disabled{
+    cursor:no-drop;
 }
 
 .next{
